@@ -1,0 +1,18 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "name": "php artisan serve",
+      "command": "composer install"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "php artisan serve": {
+      "name": "php artisan serve",
+      "command": "php artisan serve",
+      "runAtStart": true
+    }
+  }
+}
